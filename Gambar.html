@@ -1,26 +1,58 @@
 <html>
 <head>
-	<title>Gambar</title>
+	<title>Images</title>
 </head>
 <body>
  
 	<style type="text/css">
-		body{
-			font-family: sans-serif;
-		}
- 
+		.container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+	
+	
 		.gambar{
+         
 			width: 300px;
 			height: 300px;
 			border-radius: 100%;
+            margin-left: 100px;
+            margin: 50px;
+            margin-top: 10px;
+            float: left;
 		}
+
+        .text {
+            margin-left: 30%;
+        }
+
+        .lingkaran1 {
+            
+        }
+
+        
 	</style>
 
-	<img src="Capture.PNG" class ="gambar">
  
 	<br/>
  
-	<div class="lingkaran2"></div>
+	<div class="container">
+        <div class = "lingkaran1">
+            <img src="Capture.PNG" class ="gambar">
+            <h1 class="text">RedBuzz</h1>
+        </div>
+        <div class="lingkaran2">
+            <img src="Capture.PNG" alt="" class="gambar">
+            <h1 class="text">RedBuzz</h1>
+        </div>
+        <div class="lingkaran3">
+            <img src="Capture.PNG" alt="" class="gambar">
+            <h1 class="text">RedBuzz</h1>
+        </div>
+    </div>
 
 </body>
 </html>
