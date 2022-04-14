@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>12.346.759</p>
+    <script>
+        var n = "12.346.759"
+
+var d = n.replace(/\./g,"").split("").reverse();
+
+let string = "";
+
+function padBottom(nr, n, str){
+    return nr+Array(n-String(nr).length+1).join(str||'0');
+}
+
+for(let i=d.length-1;i>=0;i--){
+  string += parseInt(padBottom(d[i] , i+1))+ "<br>";
+}
+document.write(string);
+    </script>
+</body>
+</html>
